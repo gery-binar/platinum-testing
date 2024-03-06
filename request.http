@@ -1,0 +1,22 @@
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+  "email": "gery",
+  "password": "1234"
+}
+###
+
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+  "email": "testing@gmail.com",
+  "password": "1234"
+}
+###
+
+
+GET http://localhost:3000/auth/test
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RpbmdAZ21haWwuY29tIiwiaWF0IjoxNzA4OTU3OTI4fQ.QsqoHEe_nL5OsPjzpIWEe1SpJ7Lk0bW2dAPhNtPg7S0
+###
